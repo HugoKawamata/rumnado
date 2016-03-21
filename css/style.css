@@ -1,0 +1,24 @@
+/* Variables and mixins */
+/* General */
+body {
+  background-color: #ffff00; }
+
+.underline {
+  background-color: #ffff00;
+  height: 1px; }
+
+.main-body {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex; }
+
+.content {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex; }
+
+/* */
+
+/*# sourceMappingURL=style.css.map */

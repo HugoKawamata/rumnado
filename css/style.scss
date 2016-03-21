@@ -1,0 +1,39 @@
+/* Variables and mixins */
+
+$yellow: #ffff00;
+
+@mixin flexbox{
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+}
+
+@mixin fade($seconds){
+	-moz-transition: background-color $seconds ease-in-out, border-color $seconds ease-in-out, color $seconds ease-in-out;
+	-webkit-transition: background-color $seconds ease-in-out, border-color $seconds ease-in-out, color $seconds ease-in-out;
+	-ms-transition: background-color $seconds ease-in-out, border-color $seconds ease-in-out, color $seconds ease-in-out;
+	transition: background-color $seconds ease-in-out, border-color $seconds ease-in-out, color $seconds ease-in-out;
+}
+
+
+/* General */
+
+body{
+	background-color: $yellow;
+}
+
+.underline{
+	background-color: $yellow;
+	height: 1px;	
+}
+
+.main-body{
+	@include flexbox;
+}
+
+.content{
+	@include flexbox;
+}
+
+/* */
